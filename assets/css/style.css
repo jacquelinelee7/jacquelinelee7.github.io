@@ -1,0 +1,107 @@
+/* home page */
+
+body {
+    background-color: white;
+}
+
+.photos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.item:hover {
+    opacity: 0.8;
+}
+
+#Shot-on-iPhone {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+    text-align: center;
+    font-size: 80px;
+    font-weight:350;
+    display: block;
+}
+
+.photos {
+    animation-name: fadeIn;
+    animation-duration: 1.2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+}
+
+footer {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align:center;
+    padding-top: 40px;
+}
+
+/* image pages */
+
+.title {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align:start;
+    font-weight: 350;
+    font-size: 25px;
+    margin-top: -5px;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color:black;
+}
+
+.full-size {
+    display: flex; 
+    flex-direction: row;
+    align-items:center;
+    justify-content: start;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    margin-left: 150px;
+    animation-name: fadeIn; 
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+}
+
+.caption {
+    margin-left: 40px;
+    font-family: EB Garamond;
+    font-weight: 600;
+    font-size: 18px;
+    color: black;
+}
+
+@keyframes fadeIn {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:flex-start;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.next-button {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+    font-weight:normal;
+    font-size: 20px;
+    position: absolute;
+    right:0px;
+    padding-right: 35px;
+    text-decoration: underline;
+}
+
+.next-button:hover {
+    font-weight:bold;
+}
